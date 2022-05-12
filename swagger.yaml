@@ -78,7 +78,6 @@ paths:
           headers: {}
       deprecated: false
       security: []
-        - bearer: []
     get:
       tags:
       - Jobs
@@ -158,8 +157,6 @@ paths:
               schema:
                 type: string
       deprecated: false
-       security:
-           - bearer: []
 components:
   schemas:
     registerrequest:
