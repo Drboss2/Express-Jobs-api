@@ -36,6 +36,10 @@ app.use(helmet())
 app.use(cors())
 app.use(xss())
 
+app.use("/",(req,res)=>{
+  res.send('index api in running')
+})
+
 // routes
 app.use('/api/v1/auth',auth)
 app.use('/api/v1/jobs',authMiddleware,jobs)
