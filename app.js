@@ -36,8 +36,8 @@ app.use(helmet())
 app.use(cors())
 app.use(xss())
 
-app.use("/",(req,res)=>{
-  res.send('index api in running')
+app.get('/',(req,res)=>{
+  res.send('home')
 })
 
 // routes
